@@ -103,9 +103,7 @@ jupyter notebook
 Then, navigate to the desired .ipynb file in your browser.
 
 📁 Project Structure
-graphql
-Copy
-Edit
+
 RFID-Net--Robust-Image-Forgery-Detection/
 ├── Dataset/                  # Main directory for image forensics datasets
 │   ├── CASIA 2.0/            # Dataset subset 1
@@ -132,9 +130,6 @@ Fork this repository.
 
 Create a new branch:
 
-bash
-Copy
-Edit
 git checkout -b feature/your-feature-name
 Make your changes and ensure they follow the project's coding style.
 
@@ -142,9 +137,6 @@ Write clear, concise commit messages.
 
 Push your branch to your forked repo:
 
-bash
-Copy
-Edit
 git push origin feature/your-feature-name
 Open a Pull Request to the main branch and describe your changes in detail.
 
