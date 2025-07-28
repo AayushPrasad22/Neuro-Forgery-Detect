@@ -81,11 +81,13 @@ python train.py
 
 Trained models and associated data will be saved in the model/ and model1/ directories.
 
-Running Inference & Evaluation
+---
+
+## 🔬 Running Inference & Evaluation
+
 To test the trained model on new images or evaluate its performance:
 
-Bash
-
+```bash
 python rifd.py [path/to/your/image.jpg]
 # Or, if you have a dedicated testing script:
 # python test_model.py
@@ -93,7 +95,7 @@ python rifd.py [path/to/your/image.jpg]
 
 You can also explore testimages.ipynb for detailed testing procedures and visualization of results.
 
-Exploring with Jupyter Notebooks
+📊 Exploring with Jupyter Notebooks
 The project includes several Jupyter Notebooks for interactive exploration, development, and analysis:
 
 noise_clean.ipynb: Dive deep into the noise residual extraction process and data preparation.
@@ -152,6 +154,6 @@ This project is open-source and available under the MIT License.
 📞 Contact
 For any questions or inquiries, feel free to reach out:
 
-[ Aayush Prasad ]
+[Your Full Name] (e.g., Aayush Prasad)
 
 GitHub: https://github.com/AayushPrasad22
