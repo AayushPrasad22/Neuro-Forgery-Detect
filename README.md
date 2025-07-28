@@ -31,10 +31,9 @@ Ensure you have the following installed on your system:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/](https://github.com/)[Your-GitHub-Username]/RFID-Net--Robust-Image-Forgery-Detection.git
-    cd RFID-Net--Robust-Image-Forgery-Detection
+  git clone https://github.com/AayushPrasad22/RFID-Net--Robust-Image-Forgery-Detection.git
+cd RFID-Net--Robust-Image-Forgery-Detection
     ```
-    *(Replace `[Your-GitHub-Username]` with your actual GitHub username.)*
 
 2.  **Create a virtual environment (highly recommended for dependency management):**
     ```bash
