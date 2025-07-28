@@ -1,0 +1,20 @@
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Operating System generated files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+*.log
+
+# Project specific exclusions
+SCREENS/
+ExtensionScreens/
+test.png # Exclude if it's an output or temporary image
+# If the 'testimages' folder from your first screenshot is for outputs, uncomment below:
+# testimages/
