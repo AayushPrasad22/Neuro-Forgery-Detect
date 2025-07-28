@@ -29,10 +29,12 @@ Ensure you have the following installed on your system:
 
 ### Installation
 
+### Installation
+
 1.  **Clone the repository:**
     ```bash
-  git clone https://github.com/AayushPrasad22/RFID-Net--Robust-Image-Forgery-Detection.git
-cd RFID-Net--Robust-Image-Forgery-Detection
+    git clone [https://github.com/AayushPrasad22/RFID-Net--Robust-Image-Forgery-Detection.git](https://github.com/AayushPrasad22/RFID-Net--Robust-Image-Forgery-Detection.git)
+    cd RFID-Net--Robust-Image-Forgery-Detection
     ```
 
 2.  **Create a virtual environment (highly recommended for dependency management):**
@@ -50,6 +52,10 @@ cd RFID-Net--Robust-Image-Forgery-Detection
         source venv/bin/activate
         ```
 
+4.  **Install the required Python packages:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 4.  **Install the required Python packages:**
     ```bash
     pip install -r requirements.txt
