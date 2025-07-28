@@ -1,20 +1,59 @@
 # Jupyter Notebook
 .ipynb_checkpoints/
+# Jupyter's internal temporary files, should NEVER be committed.
 
 # Operating System generated files
 .DS_Store
+# macOS specific file that stores custom attributes of a folder.
 Thumbs.db
+# Windows specific file for image thumbnails.
 
 # Python
 __pycache__/
+# Directory where Python stores compiled bytecode files.
 *.pyc
+# Compiled Python files (older versions/specific cases).
 venv/
+# Common name for a Python virtual environment folder.
 env/
+# Another common name for a Python virtual environment folder.
 *.log
+# Any log files your application might generate.
 
 # Project specific exclusions
 SCREENS/
+# Your folder containing general screenshots/documents.
 ExtensionScreens/
-test.png # Exclude if it's an output or temporary image
-# If the 'testimages' folder from your first screenshot is for outputs, uncomment below:
-# testimages/
+# Your folder containing additional screenshots/documents.
+test.png
+# Your specific test output image.
+testImages/
+# Your folder for test images. Given your previous interactions, this likely
+# contains output or temporary images you don't want to track.
+# If testImages/ was meant to be input data, remove this line from .gitignore.
+
+# Additional potential exclusions (good practice)
+*.html
+# If you export Jupyter notebooks to HTML often and don't want to track them.
+# Given you had RIFDNet.html, this might be useful to add.
+*.zip
+# If you create zip archives you don't want to track.
+*.rar
+# If you create rar archives you don't want to track.
+*.7z
+# If you create 7z archives you don't want to track.
+*.exe
+# Any executable files generated locally.
+*.dll
+# Any DLL files generated locally.
+*.obj
+# Object files from compilation.
+
+# If your model files get very large (e.g., >100MB per file),
+# you would add them here and use Git LFS instead of directly tracking them.
+# Example for large model files if you start using Git LFS:
+# *.keras
+# *.h5
+# *.ckpt
+# *.pb
+# *.npy
