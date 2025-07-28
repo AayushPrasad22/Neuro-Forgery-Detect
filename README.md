@@ -1,1 +1,0 @@
-# RFID-Net--Robust-Image-Forgery-Detection
