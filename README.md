@@ -1,3 +1,5 @@
+Markdown
+
 # 🛡️ RFID-Net: A Robust Image Forgery Detection Network
 
 ## ✨ Project Overview
@@ -29,8 +31,6 @@ Ensure you have the following installed on your system:
 
 ### Installation
 
-### Installation
-
 1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/AayushPrasad22/RFID-Net--Robust-Image-Forgery-Detection.git](https://github.com/AayushPrasad22/RFID-Net--Robust-Image-Forgery-Detection.git)
@@ -56,10 +56,6 @@ Ensure you have the following installed on your system:
     ```bash
     pip install -r requirements.txt
     ```
-4.  **Install the required Python packages:**
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 ---
 
@@ -81,7 +77,6 @@ To train your own RFID-Net model, execute the `train.py` script:
 
 ```bash
 python train.py
-
 (Optional: If your train.py script accepts arguments for training, you can provide examples here, e.g., python train.py --epochs 100 --batch_size 32)
 
 Trained models and associated data will be saved in the model/ and model1/ directories.
