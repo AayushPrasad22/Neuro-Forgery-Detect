@@ -77,13 +77,8 @@ To train your own RFID-Net model, execute the `train.py` script:
 
 ```bash
 python train.py
-(Optional: If your train.py script accepts arguments for training, you can provide examples here, e.g., python train.py --epochs 100 --batch_size 32)
 
-Trained models and associated data will be saved in the model/ and model1/ directories.
-
----
-
-## 🔬 Running Inference & Evaluation
+Running Inference & Evaluation
 
 To test the trained model on new images or evaluate its performance:
 
@@ -91,9 +86,7 @@ To test the trained model on new images or evaluate its performance:
 python rifd.py [path/to/your/image.jpg]
 # Or, if you have a dedicated testing script:
 # python test_model.py
-(Optional: If rifd.py or your testing script takes arguments for image paths, output directories, etc., explain them here.)
 
-You can also explore testimages.ipynb for detailed testing procedures and visualization of results.
 
 📊 Exploring with Jupyter Notebooks
 The project includes several Jupyter Notebooks for interactive exploration, development, and analysis:
@@ -105,13 +98,14 @@ RIFDNet.ipynb: Understand the RFID-Net architecture, layer by layer, and experim
 testimages.ipynb: A comprehensive notebook for running tests, analyzing outputs, and visualizing forgery detection results.
 
 To open the notebooks:
-
-Bash
-
 jupyter notebook
+
 Then, navigate to the desired .ipynb file in your browser.
 
 📁 Project Structure
+graphql
+Copy
+Edit
 RFID-Net--Robust-Image-Forgery-Detection/
 ├── Dataset/                  # Main directory for image forensics datasets
 │   ├── CASIA 2.0/            # Dataset subset 1
@@ -136,24 +130,30 @@ We welcome contributions to make RFID-Net even better! If you have suggestions f
 
 Fork this repository.
 
-Create a new branch for your feature or bug fix: git checkout -b feature/your-feature-name
+Create a new branch:
 
-Make your changes and ensure they adhere to the project's coding style.
+bash
+Copy
+Edit
+git checkout -b feature/your-feature-name
+Make your changes and ensure they follow the project's coding style.
 
 Write clear, concise commit messages.
 
-Push your branch to your forked repository: git push origin feature/your-feature-name
+Push your branch to your forked repo:
 
-Open a Pull Request to the main branch of this repository, describing your changes in detail.
+bash
+Copy
+Edit
+git push origin feature/your-feature-name
+Open a Pull Request to the main branch and describe your changes in detail.
 
 📄 License
 This project is open-source and available under the MIT License.
 
-(Note: To fully apply the MIT License, please ensure you have a separate file named LICENSE (no extension) in your repository's root directory containing the full MIT License text. If you don't have one, you can add it directly via GitHub or create it locally and push it.)
-
 📞 Contact
-For any questions or inquiries, feel free to reach out:
+Aayush Prasad
+GitHub: AayushPrasad22
 
-[Your Full Name] (e.g., Aayush Prasad)
+Let me know if you want this styled further with badges, images, or GitHub-flavored markdown enhancements.
 
-GitHub: https://github.com/AayushPrasad22
