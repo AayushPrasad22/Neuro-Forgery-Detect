@@ -1,6 +1,6 @@
 Markdown
 
-# 🛡️ RFID-Net: A Robust Image Forgery Detection Network
+# 🛡️ Neuro Forgery Detect
 
 ## ✨ Project Overview
 
