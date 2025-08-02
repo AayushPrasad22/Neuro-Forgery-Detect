@@ -1,10 +1,8 @@
-Markdown
-
 # 🛡️ Neuro Forgery Detect
 
 ## ✨ Project Overview
 
-In an era where digital visual content is ubiquitous, the integrity of images is paramount. This project introduces **RFID-Net**, a cutting-edge deep learning model meticulously designed to detect subtle and sophisticated manipulations within digital images. Leveraging advanced neural network architectures, RFID-Net aims to distinguish genuine images from doctored ones by identifying inconsistencies and anomalies introduced during the forgery process. Our goal is to contribute to a more trustworthy digital ecosystem by providing a robust tool for image forensics.
+In an era where digital visual content is ubiquitous, the integrity of images is paramount. This project introduces **Neuro Forgery Detect**, a cutting-edge deep learning model meticulously designed to detect subtle and sophisticated manipulations within digital images. Leveraging advanced neural network architectures, Neuro Forgery Detect aims to distinguish genuine images from doctored ones by identifying inconsistencies and anomalies introduced during the forgery process. Our goal is to contribute to a more trustworthy digital ecosystem by providing a robust tool for image forensics.
 
 ---
 
@@ -20,7 +18,7 @@ In an era where digital visual content is ubiquitous, the integrity of images is
 
 ## 🛠️ Getting Started
 
-Follow these steps to set up your local development environment and run the RFID-Net project.
+Follow these steps to set up your local development environment and run the Neuro Forgery Detect project.
 
 ### Prerequisites
 
@@ -33,8 +31,8 @@ Ensure you have the following installed on your system:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/AayushPrasad22/RFID-Net--Robust-Image-Forgery-Detection.git](https://github.com/AayushPrasad22/RFID-Net--Robust-Image-Forgery-Detection.git)
-    cd RFID-Net--Robust-Image-Forgery-Detection
+    git clone https://github.com/AayushPrasad22/Neuro-Forgery-Detect.git
+    cd Neuro-Forgery-Detect
     ```
 
 2.  **Create a virtual environment (highly recommended for dependency management):**
@@ -61,7 +59,7 @@ Ensure you have the following installed on your system:
 
 ## 📂 Dataset
 
-The core of RFID-Net's training and evaluation relies on specialized image forgery datasets.
+The core of Neuro Forgery Detect's training and evaluation relies on specialized image forgery datasets.
 
 * **Location:** The `Dataset/` directory within this repository contains the structured image data.
 * **Included Subsets:** This typically includes images from known forensics benchmarks such as `CASIA 2.0`, `Columbia`, and `NIST`.
@@ -73,19 +71,11 @@ The core of RFID-Net's training and evaluation relies on specialized image forge
 
 ### Training the Model
 
-To train your own RFID-Net model, execute the `train.py` script:
+To train your own Neuro Forgery Detect model, execute the `train.py` script:
 
 ```bash
 python train.py
 
-Running Inference & Evaluation
-
-To test the trained model on new images or evaluate its performance:
-
-```bash
-python rifd.py [path/to/your/image.jpg]
-# Or, if you have a dedicated testing script:
-# python test_model.py
 
 
 📊 Exploring with Jupyter Notebooks
