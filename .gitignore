@@ -49,6 +49,8 @@ testImages/
 *.obj
 # Object files from compilation.
 
+#adding config.py which contain my address
+config.py
 # If your model files get very large (e.g., >100MB per file),
 # you would add them here and use Git LFS instead of directly tracking them.
 # Example for large model files if you start using Git LFS:
