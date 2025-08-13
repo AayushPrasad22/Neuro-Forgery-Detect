@@ -1,141 +1,92 @@
-# 🛡️ Neuro Forgery Detect
+🛡️ Neuro Forgery Detect
+A deep learning-powered system for detecting image forgeries using noise residual analysis and CNN-based architecture.
+Built with Python, TensorFlow/Keras, OpenCV for robust image forgery detection.
 
-## ✨ Project Overview
+✨ Key Features
+✔ Advanced Forgery Detection – Detects splicing, copy-move, and removal forgeries.
+✔ Noise Residual Analysis – Identifies disruptions in natural noise patterns.
+✔ Interactive Jupyter Notebooks – For exploration, visualization, and debugging.
+✔ Pre-trained & Custom Training Support – Use existing models or train your own.
 
-In an era where digital visual content is ubiquitous, the integrity of images is paramount. This project introduces **Neuro Forgery Detect**, a cutting-edge deep learning model meticulously designed to detect subtle and sophisticated manipulations within digital images. Leveraging advanced neural network architectures, Neuro Forgery Detect aims to distinguish genuine images from doctored ones by identifying inconsistencies and anomalies introduced during the forgery process. Our goal is to contribute to a more trustworthy digital ecosystem by providing a robust tool for image forensics.
+📂 Project Structure
 
----
+Neuro-Forgery-Detect/
+├── Dataset/                  # Main dataset directory (external link in DatasetLink.txt)
+├── model/                    # Trained models and data arrays (.keras, .pckl, .npy)
+├── model1/                   # Experimental models/checkpoints
+├── testimages/               # Test images for predictions
+├── config_template.py        # Template for local path configuration
+├── train.py                  # Training script
+├── nfd.py                    # Core script for prediction/inference
+├── noise_clean.ipynb         # Notebook for noise residual processing
+├── nfd.ipynb                 # Notebook for testing and visualization
+├── requirements.txt          # Python dependencies
+├── run.bat                   # (Optional) Windows execution script
+├── DatasetLink.txt           # Dataset download info
+└── README.md                 # Project documentation
 
-## 🚀 Features
 
-* **Advanced Forgery Detection:** Employs a deep neural network to identify various types of image forgeries (e.g., splicing, copy-move, removal).
-* **Noise Residual Analysis:** Specifically designed to analyze inherent noise patterns and their disruptions, which are key indicators of tampering.
-* **Comprehensive Dataset Support:** Trained and evaluated using widely recognized image forensics datasets such as CASIA 2.0, Columbia, and NIST.
-* **Modular & Extensible Codebase:** Organized Python scripts and Jupyter notebooks ensure clarity, ease of understanding, and potential for future enhancements.
-* **User-Friendly Setup:** Simplified steps to get the project up and running quickly.
+🛠 Installation & Setup
 
----
+1. Clone the Repository
 
-## 🛠️ Getting Started
+git clone https://github.com/AayushPrasad22/Neuro-Forgery-Detect.git
+cd Neuro-Forgery-Detect
 
-Follow these steps to set up your local development environment and run the Neuro Forgery Detect project.
+2. Create Virtual Environment
 
-### Prerequisites
+python -m venv venv
 
-Ensure you have the following installed on your system:
+Activate it:
 
-* **Python 3.8+** (Recommended version)
-* **Git**
+Windows:
 
-### Installation
+.\venv\Scripts\activate
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/AayushPrasad22/Neuro-Forgery-Detect.git
-    cd Neuro-Forgery-Detect
-    ```
+Linux/Mac:
 
-2.  **Create a virtual environment (highly recommended for dependency management):**
-    ```bash
-    python -m venv venv
-    ```
+3. Install Dependencies
 
-3.  **Activate the virtual environment:**
-    * **On Windows:**
-        ```bash
-        .\venv\Scripts\activate
-        ```
-    * **On macOS / Linux:**
-        ```bash
-        source venv/bin/activate
-        ```
+pip install -r requirements.txt
 
-4.  **Install the required Python packages:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+⚙️ Configuration
 
----
+MODEL_DIR = r"C:\Path\To\Your\model"
+TEST_IMAGES_DIR = r"C:\Path\To\Your\testimages"
+NOISE_X_PATH = fr"{MODEL_DIR}\noise_X.npy"
+CLEAN_Y_PATH = fr"{MODEL_DIR}\clean_Y.npy"
+MODEL_PATH = fr"{MODEL_DIR}\noise_detect_clean.keras"
 
-## 📂 Dataset
-
-The core of Neuro Forgery Detect's training and evaluation relies on specialized image forgery datasets.
-
-* **Location:** The `Dataset/` directory within this repository contains the structured image data.
-* **Included Subsets:** This typically includes images from known forensics benchmarks such as `CASIA 2.0`, `Columbia`, and `NIST`.
-* **External Link (if applicable):** If the full dataset exceeds GitHub's size limits or requires external download, please refer to `DatasetLink.txt` for instructions or download URLs.
-
----
-
-## 🚀 Usage
-
-### Training the Model
-
-To train your own Neuro Forgery Detect model, execute the `train.py` script:
-
-```bash
+🚀 Usage
+1. Train the Model
 python train.py
 
+2. Predict Forgery
+python nfd.py
 
-
-📊 Exploring with Jupyter Notebooks
-The project includes several Jupyter Notebooks for interactive exploration, development, and analysis:
-
-noise_clean.ipynb: Dive deep into the noise residual extraction process and data preparation.
-
-RIFDNet.ipynb: Understand the RFID-Net architecture, layer by layer, and experiment with its components.
-
-testimages.ipynb: A comprehensive notebook for running tests, analyzing outputs, and visualizing forgery detection results.
-
-To open the notebooks:
+3. Explore with Notebooks
 jupyter notebook
 
-Then, navigate to the desired .ipynb file in your browser.
+📦 Dataset
+CASIA 2.0, Columbia, NIST forensics datasets
 
-📁 Project Structure
+Download link in DatasetLink.txt
 
-RFID-Net--Robust-Image-Forgery-Detection/
-├── Dataset/                  # Main directory for image forensics datasets
-│   ├── CASIA 2.0/            # Dataset subset 1
-│   ├── Columbia/             # Dataset subset 2
-│   └── NIST/                 # Dataset subset 3
-├── model/                    # Stores trained model weights (.keras, .pckl) and preprocessed data arrays (.npy)
-├── model1/                   # Alternative model files or experimental checkpoints
-├── .gitignore                # Specifies files and directories to be ignored by Git
-├── DatasetLink.txt           # Text file containing link/info for larger external dataset (if used)
-├── requirements.txt          # Lists all Python package dependencies
-├── noise_clean.py            # Python script for image noise processing
-├── rifd.py                   # Python script implementing core RFID-Net logic (e.g., inference)
-├── RFIDNet.py                # Python script defining the RFID-Net neural network architecture
-├── train.py                  # Python script for training the RFID-Net model
-├── run.bat                   # (Optional) Windows Batch script for quick execution of common tasks
-├── noise_clean.ipynb         # Jupyter Notebook for interactive noise analysis
-├── RIFDNet.ipynb             # Jupyter Notebook for network architecture exploration
-├── testimages.ipynb          # Jupyter Notebook for testing and result visualization
-└── README.md                 # The document you are reading!
 🤝 Contributing
-We welcome contributions to make RFID-Net even better! If you have suggestions for improvements, bug fixes, or new features, please follow these steps:
+1.Fork the repo
 
-Fork this repository.
+2.Create a branch:
+git checkout -b feature-name
 
-Create a new branch:
+3.Commit & push
 
-git checkout -b feature/your-feature-name
-Make your changes and ensure they follow the project's coding style.
-
-Write clear, concise commit messages.
-
-Push your branch to your forked repo:
-
-git push origin feature/your-feature-name
-Open a Pull Request to the main branch and describe your changes in detail.
+4.Open a Pull Request
 
 📄 License
-This project is open-source and available under the MIT License.
+MIT License – Free to use and modify
 
-📞 Contact
-Aayush Prasad
+📬 Contact
+Author: Aayush Prasad
 GitHub: AayushPrasad22
 
-Let me know if you want this styled further with badges, images, or GitHub-flavored markdown enhancements.
 
