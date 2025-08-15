@@ -41,8 +41,10 @@ Neuro-Forgery-Detect/
 
 ## 🛠 Installation
 1️⃣ Clone the repository
+```
 git clone https://github.com/AayushPrasad22/Neuro-Forgery-Detect.git
 cd Neuro-Forgery-Detect
+```
 
 ```
 ```
