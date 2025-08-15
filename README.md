@@ -38,3 +38,16 @@ Neuro-Forgery-Detect/
 ├── DatasetLink.txt         # Dataset download info
 └── README.md               # Project documentation
 
+
+---
+
+---
+
+## 🛠 Installation
+
+> Prerequisites: Python 3.x, Git
+
+**Clone the repository**
+```bash
+git clone https://github.com/AayushPrasad22/Neuro-Forgery-Detect.git
+cd Neuro-Forgery-Detect
