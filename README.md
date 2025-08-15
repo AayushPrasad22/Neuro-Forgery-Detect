@@ -123,31 +123,25 @@ NumPy, Matplotlib
 
 Jupyter Notebooks
 ```
-🤝 Contributing
+```
+Contribution
 ```
 Contributions are welcome!
-```
-1.Fork the repo
-```
-2.Create a new branch:
-```
+
+1. Fork the repo
+
+2. Create a new branch:
 git checkout -b feature/your-feature-name
-```
-3.Commit your changes:
-```
+
+3. Commit your changes:
 git commit -m "Add your feature"
-```
-4.Push to your branch:
-```
+
+4. Push to your branch:
 git push origin feature/your-feature-name
-```
-```
-5.Create a Pull Request
 
+5. Create a Pull Request
 
-📜 License
 ```
-This project is licensed under the MIT License – see the LICENSE file for details.
 ```
 📧 Contact
 ```
