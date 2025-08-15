@@ -37,7 +37,7 @@ Neuro-Forgery-Detect/
 ├── run.bat                 # (Optional) Windows execution script
 ├── DatasetLink.txt         # Dataset download info
 └── README.md               # Project documentation
----
+```
 
 ---
 
