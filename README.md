@@ -44,9 +44,7 @@ Neuro-Forgery-Detect/
 ```
 git clone https://github.com/AayushPrasad22/Neuro-Forgery-Detect.git
 cd Neuro-Forgery-Detect
-```
 
-```
 ```
 2️⃣ Create and activate a virtual environment
 ```
