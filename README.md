@@ -68,10 +68,88 @@ Check DatasetLink.txt for dataset download link and place it in the Dataset/ fol
 5️⃣ Run Jupyter Notebook or Scripts
 ```
 Start Jupyter Notebook:
-
 jupyter notebook
 
-
 Or run the main prediction script:
-
 python nfd.py
+```
+5️⃣ Configure Paths
+```
+Create your local config.py file based on config_template.py:
+MODEL_DIR = r"C:\path\to\model"
+TEST_IMAGES_DIR = r"C:\path\to\testimages"
+
+NOISE_X_PATH = fr"{MODEL_DIR}\noise_X.npy"
+CLEAN_Y_PATH = fr"{MODEL_DIR}\clean_Y.npy"
+
+MODEL_PATH = fr"{MODEL_DIR}\noise_detect_clean.keras"
+HISTORY_PATH = fr"{MODEL_DIR}\noise_detect_clean.pckl"
+
+TEST_IMAGE_PATH_1 = fr"{TEST_IMAGES_DIR}\01.png"
+TEST_IMAGE_PATH_2 = fr"{TEST_IMAGES_DIR}\02.png"
+TEST_IMAGE_PATH_3 = fr"{TEST_IMAGES_DIR}\04.png"
+```
+Usage
+```
+✅ Train the Model
+python train.py
+✅ Run Predictions
+python nfd.py
+✅ Explore with Jupyter Notebook
+jupyter notebook
+
+```plaintext
+Then open:
+noise_clean.ipynb → For noise residual processing
+nfd.ipynb → For inference and visualization
+```
+📊 Results & Visualization
+```
+The model outputs a forgery heatmap that highlights manipulated regions in an image.
+Example output:
+
+Original Image → Predicted Forgery Map
+(Insert before/after sample images here)
+```
+🧩 Tech Stack
+```
+Python 3.8+
+
+TensorFlow/Keras
+
+OpenCV
+
+NumPy, Matplotlib
+
+Jupyter Notebooks
+```
+🤝 Contributing
+```
+Contributions are welcome!
+
+1.Fork the repo
+
+2.Create a new branch:
+
+git checkout -b feature/your-feature-name
+
+3.Commit your changes:
+
+git commit -m "Add your feature"
+
+4.Push to your branch:
+
+git push origin feature/your-feature-name
+
+5.Create a Pull Request
+
+```
+📜 License
+
+This project is licensed under the MIT License – see the LICENSE file for details.
+```
+```
+📧 Contact
+```
+👤 Aayush Prasad
+📩 GitHub: AayushPrasad22
