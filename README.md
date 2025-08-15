@@ -57,8 +57,9 @@ source venv/bin/activate
 
 ```
 3️⃣ Install dependencies
-pip install -r requirements.txt
 ```
+pip install -r requirements.txt
+
 ```
 4️⃣ Download Dataset
 ```
