@@ -123,7 +123,6 @@ NumPy, Matplotlib
 
 Jupyter Notebooks
 ```
-```
 Contribution
 ```
 Contributions are welcome!
@@ -140,8 +139,6 @@ git commit -m "Add your feature"
 git push origin feature/your-feature-name
 
 5. Create a Pull Request
-
-```
 ```
 📧 Contact
 ```
