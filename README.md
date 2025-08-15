@@ -39,15 +39,15 @@ Neuro-Forgery-Detect/
 └── README.md               # Project documentation
 ```
 
----
-
 ## 🛠 Installation
 1️⃣ Clone the repository
 git clone https://github.com/AayushPrasad22/Neuro-Forgery-Detect.git
 cd Neuro-Forgery-Detect
 
+```
+```
 2️⃣ Create and activate a virtual environment
-
+```
 Windows:
 
 python -m venv venv
@@ -58,16 +58,17 @@ Linux/Mac:
 
 python3 -m venv venv
 source venv/bin/activate
-
+```
 3️⃣ Install dependencies
 pip install -r requirements.txt
-
+```
+```
 4️⃣ Download Dataset
-
+```
 Check DatasetLink.txt for dataset download link and place it in the Dataset/ folder.
-
+```
 5️⃣ Run Jupyter Notebook or Scripts
-
+```
 Start Jupyter Notebook:
 
 jupyter notebook
